@@ -35,14 +35,14 @@ app.get('/greet/:name', (req, res)=>{
 app.get('/hello1', (req, res)=>{
     var name = req.query.name || 'world';
     var age = req.query.age;
-    var year = date.format(new Date(), 'YYYY');
-    var yearBorn = year - age;
+    var yr = date.format(new Date(), 'YYYY');
+    var yrBorn = yr - age;
 
     if (!age){
         res.send(`Hello ${name}!`);
     }
     else{
-        res.send(`Hello ${name}. You were born in ${yearBorn}.`)
+        res.send(`Hello ${name}. You were born in ${yrBorn}.`)
     }
 });
 
