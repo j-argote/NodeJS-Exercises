@@ -8,7 +8,7 @@ function resultfun(result){
     console.log(result);
 
 }
-
+//adds 1 and 2 and displays the result through resultfun
 add(1, 2, resultfun)
 
 
